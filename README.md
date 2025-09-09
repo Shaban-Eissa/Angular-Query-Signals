@@ -1,59 +1,73 @@
-# TanstackQuery
+# Building TanStack Query
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+This project is a custom implementation of TanStack Query concepts in Angular 19, powered by Signals. It demonstrates how modern Angular's reactivity model can be used to handle server state management declaratively, without external libraries.
 
-## Development server
+## Features
 
-To start a local development server, run:
+- **GitHub Repository Explorer**: Fetch and display repository information from a specific GitHub user
+- **Custom Query State Management**: Built-in data fetching, caching, and state management using Angular signals
+- **Loading & Error States**: Visual indicators for loading and error states
+- **Local Storage Persistence**: Cached data persists between sessions
+- **Manual Refetching**: Ability to manually trigger data refresh with updated timestamp
+- **Modern UI Design**: Clean and responsive interface built with TailwindCSS v4
+- **Responsive Layout**: Optimized for all device sizes with a mobile-first approach
+
+
+## Technologies Used
+
+- **Angular 19**: Latest version with standalone components and signals
+- **Custom Query State Service**: Custom implementation of TanStack Query concepts
+- **TailwindCSS v4**: Utility-first CSS framework for modern styling
+- **TypeScript**: Type-safe JavaScript for robust development
+- **GitHub API**: For fetching repository data from specific users
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18+)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Shaban-Eissa/Angular-Query-Signals.git
+cd Angular-Query-Signals
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+```
+
+3. Start the development server:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+4. Open your browser and navigate to `http://localhost:4200/`
 
-## Code scaffolding
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## How Query State is Implemented
 
-```bash
-ng generate component component-name
-```
+This project demonstrates a custom implementation of query state management using Angular signals. The `query-state.service.ts` provides:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+- Custom query hooks with Angular signals
+- Configurable caching with staleTime
+- Loading and error states
+- Local storage persistence for cached data
+- Data invalidation and manual refetching
 
-```bash
-ng generate --help
-```
+## 🙏 Acknowledgments
 
-## Building
+- [Angular Team](https://angular.dev) for the amazing framework and signals API
+- [TanStack Query](https://tanstack.com/query/latest) for the inspiration and concepts
+- [TailwindCSS](https://tailwindcss.com) for the utility-first CSS framework
+- [GitHub API](https://docs.github.com/en/rest) for the repository data
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
