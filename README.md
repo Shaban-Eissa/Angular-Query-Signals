@@ -2,6 +2,9 @@
 
 This project is a custom implementation of TanStack Query concepts in Angular 19, powered by Signals. It demonstrates how modern Angular's reactivity model can be used to handle server state management declaratively, without external libraries.
 
+<img style="width:100%; height:auto" alt="1708548198881" src="https://github.com/user-attachments/assets/794ceb90-d712-43d4-b7fb-f331e7688ca6" />
+
+
 ## Features
 
 - **GitHub Repository Explorer**: Fetch and display repository information from a specific GitHub user
